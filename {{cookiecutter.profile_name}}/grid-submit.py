@@ -19,6 +19,8 @@ makedirs(jobDir, exist_ok=True)
 sub = htcondor.Submit({
     'executable':   '/bin/bash',
     'arguments':    jobscript,
+    'universe':     'vanilla',
+    'requirements': 'OpSysAndVer == "CentOS7"',
     'max_retries':  '5',
     'log':          join(jobDir, 'condor.log'),
     'output':       join(jobDir, 'condor.out'),

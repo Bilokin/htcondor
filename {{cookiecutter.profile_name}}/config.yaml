@@ -4,6 +4,6 @@ cluster-status: "grid-status.py"
 max-jobs-per-second: 100
 max-status-checks-per-second: 100
 restart-times: 5
-local-cores: 10
-jobs: 5000
+local-cores: 1
+jobs: 100
 verbose: false
