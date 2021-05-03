@@ -1,6 +1,8 @@
-# HTCondor Snakemake profile
+# Belle II HTCondor Snakemake profile
 
-This profile configures Snakemake to submit jobs to a HTCondor cluster.
+This profile configures Snakemake to submit Belle II jobs to a HTCondor cluster.
+Forked from [Snakemake-Profiles/htcondor](https://github.com/Snakemake-Profiles/htcondor)
+
 
 ### Prerequisites
 The profile makes use of the HTCondor python bindings which can be installed with 
