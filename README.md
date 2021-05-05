@@ -21,7 +21,11 @@ To deploy this profile run
     cd ~/.config/snakemake
     cookiecutter https://github.com/bilokin/htcondor.git
 
-You will be asked for the name of the profile and for a path where the HTCondor logs will be stored. 
+The cookiecutter will ask the following:
+
+ * Profile name, one can leave the suggested `htcondor`
+ * Path to saved logs, for DESY NAF one can copy-paste the suggested path and change `user_name` to your user name.
+
 The logs will be used to update the status of submitted jobs (as recommended in the [documentation of the HTCondor Python bindings](https://htcondor.readthedocs.io/en/latest/apis/python-bindings/advanced/Scalable-Job-Tracking.html)).
 
 Then, you can run Snakemake with
